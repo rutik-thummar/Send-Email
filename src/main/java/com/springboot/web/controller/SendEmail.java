@@ -13,8 +13,8 @@ import javax.mail.internet.MimeMessage;
 public class SendEmail {
 	public static void main(String[] args) {
 		String subject = "Opsnece Technologies";
-		String from = "rutikthummar15@gmail.com";
-		String to = "vasoyam44@gmail.com";
+		String from = "abc@gmail.com";
+		String to = "xyz@gmail.com";
 		sendEmail(from,to,subject );
 	}
 
@@ -29,7 +29,7 @@ public class SendEmail {
 		Session session = Session.getDefaultInstance(properties, new Authenticator() {
 			@Override
 			protected PasswordAuthentication getPasswordAuthentication() {
-				return new PasswordAuthentication(from, "oofzivnnylamhvfk");
+				return new PasswordAuthentication(from, "xxxxxxx");
 			}
 		});
 		MimeMessage msg = new MimeMessage(session);
